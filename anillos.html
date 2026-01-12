@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOMA ACCESORIOS | Catálogo de Anillos</title>
+    <meta name="description" content="Anillos ajustables, de compromiso, con piedra y apilables. Encuentra la talla perfecta para ti.">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* [Aquí deben ir los mismos estilos CSS que en collares.html/aretes.html] */
+        .catalog-header {
+            text-align: center;
+            padding: 80px 20px 40px;
+            background-color: #f8f8f8;
+        }
+
+        .catalog-header h1 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .catalog-header p {
+            color: #666;
+            font-size: 1.1em;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .earring-catalog {
+            padding: 50px 20px;
+        }
+
+        .earring-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .earring-card {
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .earring-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .earring-image {
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+        }
+
+        .earring-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .earring-card:hover .earring-image img {
+             transform: scale(1.05);
+        }
+
+        .earring-info {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .earring-info h3 {
+            font-size: 1.5em;
+            color: #c18f77;
+            margin-bottom: 10px;
+        }
+
+        .earring-info p {
+            color: #777;
+            margin-bottom: 15px;
+            font-size: 0.95em;
+        }
+        
+        .earring-price {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .buy-button {
+            display: inline-block;
+            background-color: #c18f77;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .buy-button:hover {
+            background-color: #a87961;
+        }
+        
+        .main-content {
+            padding-top: 60px;
+        }
+    </style>
+</head>
+<body>
+    
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo"><h1>JOMA ACCESORIOS</h1></div>
+            <ul class="nav-menu">
+                <li><a href="index.html#inicio">Inicio</a></li>
+                <li><a href="index.html#sobre-nosotros">Nosotros</a></li>
+                <li><a href="index.html#productos">Productos</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <section class="catalog-header">
+            <h1>💍 Catálogo de Anillos 💍</h1>
+            <p>La pieza central de tu mano. Desde anillos de compromiso y promesas hasta diseños apilables de moda. ¡Encuentra tu talla!</p>
+        </section>
+
+        <section class="earring-catalog">
+            <div class="earring-grid container">
+                
+                <div class="earring-card">
+                    <div class="earring-image">
+                        <img src="https://img.kwcdn.com/product/fancy/a5ce283c-2966-48ac-a551-d2ca9ce3286d.jpg?imageMogr2/auto-orient%7CimageView2/2/w/800/q/70/format/webp" alt="Anillos Ajustables Midi">
+                    </div>
+                    <div class="earring-info">
+                        <h3>Anillos Ajustables</h3>
+                        <p>Ideales para cualquier dedo sin preocuparte por la talla. Diseños delicados y modernos, perfectos para apilar.</p>
+                        <div class="earring-price">Desde $3.00</div>
+                        <a href="https://wa.me/593990186354?text=Quiero%20ordenar%20Anillos%20Ajustables" target="_blank" class="buy-button">Ordenar Ahora</a>
+                    </div>
+                </div>
+
+                <div class="earring-card">
+                    <div class="earring-image">
+                        <img src="https://www.pedrajoyas.com.ec/cdn/shop/files/Anillo-compromiso-3-piedras-azul.jpg?v=1706286406" alt="Anillos con Piedras">
+                    </div>
+                    <div class="earring-info">
+                        <h3>Anillos con Piedras</h3>
+                        <p>Piedras semipreciosas como cuarzo, amatista y turquesa. Diseños que resaltan por su color y significado.</p>
+                        <div class="earring-price">Desde $6.50</div>
+                        <a href="https://wa.me/593990186354?text=Quiero%20ordenar%20Anillos%20con%20Piedras" target="_blank" class="buy-button">Ordenar Ahora</a>
+                    </div>
+                </div>
+
+                <div class="earring-card">
+                    <div class="earring-image">
+                        <img src="https://www.joyeriadiamanti.com/wp-content/uploads/2023/07/IMG_7827.jpg" alt="Anillos Sencillos de Promesa">
+                    </div>
+                    <div class="earring-info">
+                        <h3>Anillos de Promesa</h3>
+                        <p>Sencillos, elegantes y con pequeños detalles de zircones. El regalo perfecto para una persona especial.</p>
+                        <div class="earring-price">Desde $7.99</div>
+                        <a href="https://wa.me/593990186354?text=Quiero%20ordenar%20Anillos%20de%20Promesa" target="_blank" class="buy-button">Ordenar Ahora</a>
+                    </div>
+                </div>
+
+                <div class="earring-card">
+                    <div class="earring-image">
+                        <img src="https://www.pedrajoyas.com.ec/cdn/shop/files/Anillo-redondo-para-grabar-1.jpg?v=1724808197" alt="Anillos de Sello y Gruesos">
+                    </div>
+                    <div class="earring-info">
+                        <h3>Sellos y Gruesos</h3>
+                        <p>Los 'Statement Rings' de la temporada. Diseños audaces y llamativos que se convierten en el foco de atención.</p>
+                        <div class="earring-price">Desde $5.00</div>
+                        <a href="https://wa.me/593990186354?text=Quiero%20ordenar%20Anillos%20Gruesos" target="_blank" class="buy-button">Ordenar Ahora</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        </footer>
+
+    <a href="https://wa.me/593990186354" class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
+        </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

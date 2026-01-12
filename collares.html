@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOMA ACCESORIOS | Catálogo de Collares y Pulseras</title>
+    <meta name="description" content="Descubre nuestra colección de collares, cadenas, dijes y pulseras personalizables y de moda.">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos base (Mismos que aretes.html, repetidos para referencia) */
+        .catalog-header {
+            text-align: center;
+            padding: 80px 20px 40px;
+            background-color: #f8f8f8;
+        }
+
+        .catalog-header h1 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .catalog-header p {
+            color: #666;
+            font-size: 1.1em;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .earring-catalog { /* Renombrado a product-catalog en la práctica */
+            padding: 50px 20px;
+        }
+
+        .earring-grid { /* Renombrado a product-grid en la práctica */
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .earring-card { /* Renombrado a product-card en la práctica */
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .earring-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .earring-image {
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+        }
+
+        .earring-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .earring-card:hover .earring-image img {
+             transform: scale(1.05);
+        }
+
+        .earring-info {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .earring-info h3 {
+            font-size: 1.5em;
+            color: #c18f77;
+            margin-bottom: 10px;
+        }
+
+        .earring-info p {
+            color: #777;
+            margin-bottom: 15px;
+            font-size: 0.95em;
+        }
+        
+        .earring-price {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .buy-button {
+            display: inline-block;
+            background-color: #c18f77;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .buy-button:hover {
+            background-color: #a87961;
+        }
+        
+        .main-content {
+            padding-top: 60px;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo"><h1>JOMA ACCESORIOS</h1></div>
+            <ul class="nav-menu">
+                <li><a href="index.html#inicio">Inicio</a></li>
+                <li><a href="index.html#sobre-nosotros">Nosotros</a></li>
+                <li><a href="index.html#productos">Productos</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <section class="catalog-header">
+            <h1>🔗 Collares, Pulseras y Cadenas 🔗</h1>
+            <p>Piezas que definen tu escote y muñeca. Encuentra la cadena perfecta, dijes con significado y pulseras para combinar.</p>
+        </section>
+
+        <section class="earring-catalog">
+            <div class="earring-grid container">
+                
+                <div class="earring-card">
+                    <div class="earring-image">
+                        <img src="https://ohtete.tiendada.com/api/scrooge/file/FL-4AB567DB?v=-1" alt="Collar con Iniciales">
+                    </div>
+                    <div class="earring-info">
+                        <h3>Dijes de Iniciales</h3>
+                        <p>Lleva contigo lo que amas. Cadena fina con inicial grabada en oro o plata. Totalmente personalizable.</p>
+                        <div class="earring-price">Desde $8.99</div>
+                        <a href="https://wa.me/593990186354?text=Quiero%20ordenar%20un%20Collar%20de%20Iniciales" target="_blank" class="buy-button">Ordenar Ahora</a>
+                    </div>
+                </div>
+
+                <div class="earring-card">
+                    <div class="earring-image">
+                        <img src="https://img.kwcdn.com/product/fancy/f051ba99-cab9-4a80-8148-9cd6a3086c47.jpg?imageMogr2/auto-orient%7CimageView2/2/w/800/q/70/format/webp" alt="Cadenas de Capas">
+                    </div>
+                    <div class="earring-info">
+                        <h3>Sets de Capas Listos</h3>
+                        <p>Combinaciones pre-diseñadas de 2 o 3 cadenas. Luce la tendencia 'Layering' sin esfuerzo. Varios largos y texturas.</p>
+                        <div class="earring-price">Desde $12.00</div>
+                        <a href="https://wa.me/593990186354?text=Quiero%20ordenar%20Sets%20de%20Cadenas%20Layering" target="_blank" class="buy-button">Ordenar Ahora</a>
+                    </div>
+                </div>
+
+                <div class="earring-card">
+                    <div class="earring-image">
+                        <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/7b8e45f799cfffb17b9b6d6d34302c5f.jpg?imageMogr2/auto-orient%7CimageView2/2/w/800/q/70/format/webp" alt="Pulseras de Cuentas">
+                    </div>
+                    <div class="earring-info">
+                        <h3>Pulseras de Cuentas y Charms</h3>
+                        <p>Diseños elásticos y ajustables con piedras naturales, cristales y pequeños dijes con significado. Elige tu piedra.</p>
+                        <div class="earring-price">Desde $5.50</div>
+                        <a href="https://wa.me/593990186354?text=Quiero%20ordenar%20Pulseras%20de%20Cuentas" target="_blank" class="buy-button">Ordenar Ahora</a>
+                    </div>
+                </div>
+
+                <div class="earring-card">
+                    <div class="earring-image">
+                        <img src="https://enigmajoyeria.com/cdn/shop/files/Collar-301047806033-2.jpg?v=1749563754&width=1600" alt="Gargantillas de moda">
+                    </div>
+                    <div class="earring-info">
+                        <h3>Gargantillas (Chokers)</h3>
+                        <p>Diseños minimalistas y ajustables que se adaptan perfectamente a tu cuello. Ideales para un look moderno y juvenil.</p>
+                        <div class="earring-price">Desde $4.50</div>
+                        <a href="https://wa.me/593990186354?text=Quiero%20ordenar%20una%20Gargantilla" target="_blank" class="buy-button">Ordenar Ahora</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        </footer>
+
+    <a href="https://wa.me/593990186354" class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
+        </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

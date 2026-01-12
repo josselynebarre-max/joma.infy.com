@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOMA ACCESORIOS | Catálogo de Aretes</title>
+    <meta name="description" content="Descubre nuestra colección completa de aretes: argollas, studs, colgantes y más, a precios accesibles.">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos específicos de la página de catálogo */
+        .catalog-header {
+            text-align: center;
+            padding: 80px 20px 40px;
+            background-color: #f8f8f8;
+        }
+
+        .catalog-header h1 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .catalog-header p {
+            color: #666;
+            font-size: 1.1em;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .earring-catalog {
+            padding: 50px 20px;
+        }
+
+        .earring-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .earring-card {
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .earring-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .earring-image {
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+        }
+
+        .earring-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .earring-card:hover .earring-image img {
+             transform: scale(1.05);
+        }
+
+        .earring-info {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .earring-info h3 {
+            font-size: 1.5em;
+            color: #c18f77; /* Color de JOMA ACCESORIOS */
+            margin-bottom: 10px;
+        }
+
+        .earring-info p {
+            color: #777;
+            margin-bottom: 15px;
+            font-size: 0.95em;
+        }
+        
+        .earring-price {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .buy-button {
+            display: inline-block;
+            background-color: #c18f77;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .buy-button:hover {
+            background-color: #a87961;
+        }
+        
+        /* Asegura que el contenedor principal de la página tenga padding para que no se pegue al header */
+        .main-content {
+            padding-top: 60px; /* Ajustar según la altura de tu header fijo */
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <h1>JOMA ACCESORIOS</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html#inicio">Inicio</a></li>
+                <li><a href="index.html#sobre-nosotros">Nosotros</a></li>
+                <li><a href="index.html#productos">Productos</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <section class="catalog-header">
+            <h1>✨ Catálogo de Aretes y Pendientes ✨</h1>
+            <p>Descubre la variedad perfecta para cada ocasión. Desde el minimalismo chic hasta el brillo de una noche especial. Precios desde $1.</p>
+        </section>
+
+        <section class="earring-catalog">
+            <div class="earring-grid container">
+                
+                <div class="earring-card">
+                    <div class="earring-image">
+                        <img src="https://www.pedrajoyas.com.ec/cdn/shop/files/Argolla-classic-criolla-2_5x18mm.jpg?v=1714173325" alt="Aretes Argollas Clásicas">
+                    </div>
+                    <div class="earring-info">
+                        <h3>Argollas Clásicas</h3>
+                        <p>El básico que nunca pasa de moda. Ligeras y versátiles, perfectas para el uso diario. Disponibles en dorado y plateado.</p>
+                        <div class="earring-price">Desde $3.50</div>
+                        <a href="https://wa.me/593990186354?text=Quiero%20ordenar%20las%20Argollas%20Clásicas" target="_blank" class="buy-button">Ordenar por WhatsApp</a>
+                    </div>
+                </div>
+
+                <div class="earring-card">
+                    <div class="earring-image">
+                        <img src="https://i.etsystatic.com/25500876/r/il/3ebfbe/6562964830/il_fullxfull.6562964830_bjsv.jpg" alt="Aretes Studs Minimalistas">
+                    </div>
+                    <div class="earring-info">
+                        <h3>Studs Minimalistas</h3>
+                        <p>Pequeños, elegantes y sutiles. Ideales para segundos o terceros orificios o para un look sobrio. Varios diseños disponibles.</p>
+                        <div class="earring-price">Desde $1.00</div>
+                        <a href="https://wa.me/593990186354?text=Quiero%20ordenar%20los%20Studs%20Minimalistas" target="_blank" class="buy-button">Ordenar por WhatsApp</a>
+                    </div>
+                </div>
+
+                <div class="earring-card">
+                    <div class="earring-image">
+                        <img src="https://m.media-amazon.com/images/I/719gZSFP3ML._AC_SL1000_.jpg" alt="Aretes Colgantes Statement">
+                    </div>
+                    <div class="earring-info">
+                        <h3>Colgantes Statement</h3>
+                        <p>Diseños llamativos y largos que añaden un toque dramático y moderno a cualquier atuendo de fiesta o evento especial.</p>
+                        <div class="earring-price">Desde $7.50</div>
+                        <a href="https://wa.me/593990186354?text=Quiero%20ordenar%20los%20Colgantes%20Statement" target="_blank" class="buy-button">Ordenar por WhatsApp</a>
+                    </div>
+                </div>
+
+                <div class="earring-card">
+                    <div class="earring-image">
+                        <img src="https://www.pedrajoyas.com.ec/cdn/shop/files/Aretes-perla-con-petalos-circon.jpg?v=1736627866" alt="Aretes de Perlas">
+                    </div>
+                    <div class="earring-info">
+                        <h3>Aretes de Perlas</h3>
+                        <p>Símbolo de elegancia atemporal. Perfectos para un look sofisticado y formal. Tamaños variados.</p>
+                        <div class="earring-price">Desde $4.00</div>
+                        <a href="https://wa.me/593990186354?text=Quiero%20ordenar%20los%20Aretes%20de%20Perlas" target="_blank" class="buy-button">Ordenar por WhatsApp</a>
+                    </div>
+                </div>
+
+                <div class="earring-card">
+                    <div class="earring-image">
+                        <img src="https://lavandamx.com/cdn/shop/files/ARTR-252-001-PLACLavanda.jpg?v=1745214962&width=3565" alt="Earcuffs Trepadores">
+                    </div>
+                    <div class="earring-info">
+                        <h3>Earcuffs / Trepadores</h3>
+                        <p>La tendencia del momento. Diseños que suben por el borde de la oreja sin necesidad de perforaciones adicionales.</p>
+                        <div class="earring-price">Desde $5.50</div>
+                        <a href="https://wa.me/593990186354?text=Quiero%20ordenar%20los%20Earcuffs%20Trepadores" target="_blank" class="buy-button">Ordenar por WhatsApp</a>
+                    </div>
+                </div>
+
+                <div class="earring-card">
+                    <div class="earring-image">
+                        <img src="https://img.kwcdn.com/product/fancy/bb681b4d-7358-474b-8820-74620d0ed50a.jpg?imageMogr2/auto-orient%7CimageView2/2/w/800/q/70/format/webp" alt="Aretes Personalizados">
+                    </div>
+                    <div class="earring-info">
+                        <h3>Aretes Personalizados</h3>
+                        <p>Diseña tus propios aretes con iniciales, nombres o figuras especiales. ¡Regalo ideal y único!</p>
+                        <div class="earring-price">Consulta Precio</div>
+                        <a href="https://wa.me/593990186354?text=Quiero%20cotizar%20Aretes%20Personalizados" target="_blank" class="buy-button special-button">¡Diseña el tuyo!</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        </footer>
+
+    <a href="https://wa.me/593990186354" class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
+        </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
